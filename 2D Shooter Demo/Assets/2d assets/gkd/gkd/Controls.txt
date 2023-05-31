@@ -1,0 +1,15 @@
+R - Restart Game
+
+Left - A
+Right - D
+Down - S
+Up/Jump - W or Space
+
+Sword - K or Left Mouse Button (press 3 times for combo)
+Guns - J or Right Mouse Button
+Dash - L or Shift
+
+Lunging Stab - Down + Sword (can be canceled into from combo)
+Dual Shoot - Down + Guns
+
+Attack enemies with sword to refill ammunition

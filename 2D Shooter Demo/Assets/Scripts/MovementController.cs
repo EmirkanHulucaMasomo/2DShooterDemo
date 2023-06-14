@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using static EventManager;
 
@@ -21,8 +22,10 @@ public class MovementController : MonoBehaviour
     private Animator animator;
     private SpriteRenderer pSprite;
     private EventManager eventManager;
-
+    private StatController stats;
     [SerializeField] private GameObject dashvFX;
+
+    public FixedJoystick joystick;
     
     private enum MoveState { idle,run}
 
@@ -35,7 +38,9 @@ public class MovementController : MonoBehaviour
         boxCollider2D = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
         pSprite = GetComponent<SpriteRenderer>();
+        joystick = GameObject.Find("Fixed Joystick").GetComponent<FixedJoystick>();
         eventManager = GameObject.Find("GameManager").GetComponent<EventManager>();
+        stats=GetComponent<StatController>();
     }
 
     // Update is called once per frame
@@ -44,8 +49,12 @@ public class MovementController : MonoBehaviour
         moveX = 0f;
         moveY = 0f;
         animator.SetBool("Running", false);
+        if (stats.Hp <= 0)
+        {
+            eventManager.PlayerDied();
+        }
 
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D)|| joystick.Horizontal >= 0.2)
         {
             moveX = +1f;
             
@@ -59,7 +68,7 @@ public class MovementController : MonoBehaviour
             }
             
         }
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A)|| joystick.Horizontal <= -0.2)
         {
             moveX = -1f;
             animator.SetBool("Running", true);
@@ -88,10 +97,11 @@ public class MovementController : MonoBehaviour
                 dashvFX.transform.eulerAngles = new Vector3(0f, 180f, 0f);
                 rigBody.AddForce(new Vector2(-4f, 0f), ForceMode2D.Force);
             }
-            
+
         }
-        if (Input.GetKeyDown(KeyCode.Space)&&IsGrounded())
+        if (joystick.Vertical>=0.5f&&IsGrounded())
         {
+            //Input.GetKeyDown(KeyCode.Space)
             rigBody.velocity = new Vector2(rigBody.velocity.x, JumpForce);
             animator.SetBool("Jumping", true);
             moveY = +1f;
@@ -146,9 +156,22 @@ public class MovementController : MonoBehaviour
     }
 
 
-    public void DashStart()
+    public void Dash()
     {
-
+        animator.SetBool("Dashing", true);
+        dashvFX.SetActive(true);
+        dashing = true;
+        //rigBody.velocity = new Vector2(DashForce, rigBody.velocity.y);
+        if (moveX == 1f)
+        {
+            dashvFX.transform.eulerAngles = new Vector3(0f, 0f, 0f);
+            rigBody.AddForce(new Vector2(4f, 0f), ForceMode2D.Force);
+        }
+        if (moveX == -1f)
+        {
+            dashvFX.transform.eulerAngles = new Vector3(0f, 180f, 0f);
+            rigBody.AddForce(new Vector2(-4f, 0f), ForceMode2D.Force);
+        }
     }
     public void DashEnd()
     {

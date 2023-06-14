@@ -1,7 +1,556 @@
 fileFormatVersion: 2
 guid: cff5c8521ff18484b8b68db1884f1b22
-DefaultImporter:
+ScriptedImporter:
+  internalIDToNameTable: []
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: LungingStab_Frame_0
+    originalName: 
+    pivot: {x: 0.26086956, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 122
+      y: 78
+      width: 46
+      height: 29
+    spriteID: 87f6dbffdd9e08445843beb622e359e0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 122, y: 78}
+  - name: LungingStab_Frame_1
+    originalName: 
+    pivot: {x: 0.26086956, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 78
+      width: 46
+      height: 29
+    spriteID: 27fe2fd12508a9545b79eef099c1de2a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 78}
+  - name: LungingStab_Frame_2
+    originalName: 
+    pivot: {x: 0.26086956, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 115
+      width: 46
+      height: 29
+    spriteID: 94287a7315776324f817616590416359
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 115}
+  - name: LungingStab_Frame_3
+    originalName: 
+    pivot: {x: 0.33333334, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 51
+      height: 29
+    spriteID: 08dafccc0deac974b92fc2d5b2a15000
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: LungingStab_Frame_4
+    originalName: 
+    pivot: {x: 0.33333334, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 63
+      y: 4
+      width: 51
+      height: 29
+    spriteID: eb3fc94c5b075dd429d20392be456670
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 63, y: 4}
+  - name: LungingStab_Frame_5
+    originalName: 
+    pivot: {x: 0.33333334, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 122
+      y: 4
+      width: 51
+      height: 29
+    spriteID: a32ecb480a93cea4595235e9527b53a1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 122, y: 4}
+  - name: LungingStab_Frame_6
+    originalName: 
+    pivot: {x: 0.33333334, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 181
+      y: 4
+      width: 51
+      height: 29
+    spriteID: 32fe732a819fa4147b0df6938516bba8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 181, y: 4}
+  - name: LungingStab_Frame_7
+    originalName: 
+    pivot: {x: 0.33333334, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 41
+      width: 51
+      height: 29
+    spriteID: b3f66aaf6630cd04e8d6825c9bfa5164
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 41}
+  - name: LungingStab_Frame_8
+    originalName: 
+    pivot: {x: 0.33333334, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 63
+      y: 41
+      width: 51
+      height: 29
+    spriteID: 274efb9ccd48c9148af9a3a4b5422d58
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 63, y: 41}
+  - name: LungingStab_Frame_9
+    originalName: 
+    pivot: {x: 0.33333334, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 122
+      y: 41
+      width: 51
+      height: 29
+    spriteID: 40dd1b05b91394643b78a6129d03b203
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 122, y: 41}
+  - name: LungingStab_Frame_10
+    originalName: 
+    pivot: {x: 0.33333334, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 181
+      y: 41
+      width: 51
+      height: 29
+    spriteID: 4fd63ed2c0e1dc446980e083f5c15300
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 181, y: 41}
+  - name: LungingStab_Frame_11
+    originalName: 
+    pivot: {x: 0.33333334, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 78
+      width: 51
+      height: 29
+    spriteID: 981e547b8c96a8a4e80ac36c9fbf79ee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 78}
+  - name: LungingStab_Frame_12
+    originalName: 
+    pivot: {x: 0.33333334, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 63
+      y: 78
+      width: 51
+      height: 29
+    spriteID: ff4aa413d7feb1045a7c3fe3620bd063
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 63, y: 78}
+  - name: LungingStab_Frame_13
+    originalName: 
+    pivot: {x: 0.40909097, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 152
+      width: 22
+      height: 38
+    spriteID: da3b6c335e695c949810a6fecf8bbc23
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 152}
+  - name: LungingStab_Frame_14
+    originalName: 
+    pivot: {x: 0.53846157, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 34
+      y: 152
+      width: 26
+      height: 32
+    spriteID: 1ec715aefca9a2b4eab1dd74a1697f28
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 34, y: 152}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -513051170
+    name: LungingStab
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: LungingStab_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 28
+        y: 0
+        width: 46
+        height: 29
+      spriteId: 87f6dbffdd9e08445843beb622e359e0
+    - name: LungingStab_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 28
+        y: 0
+        width: 46
+        height: 29
+      spriteId: 27fe2fd12508a9545b79eef099c1de2a
+    - name: LungingStab_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 28
+        y: 0
+        width: 46
+        height: 29
+      spriteId: 94287a7315776324f817616590416359
+    - name: LungingStab_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 23
+        y: 0
+        width: 51
+        height: 29
+      spriteId: 08dafccc0deac974b92fc2d5b2a15000
+    - name: LungingStab_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 23
+        y: 0
+        width: 51
+        height: 29
+      spriteId: eb3fc94c5b075dd429d20392be456670
+    - name: LungingStab_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 23
+        y: 0
+        width: 51
+        height: 29
+      spriteId: a32ecb480a93cea4595235e9527b53a1
+    - name: LungingStab_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 23
+        y: 0
+        width: 51
+        height: 29
+      spriteId: 32fe732a819fa4147b0df6938516bba8
+    - name: LungingStab_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 23
+        y: 0
+        width: 51
+        height: 29
+      spriteId: b3f66aaf6630cd04e8d6825c9bfa5164
+    - name: LungingStab_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 23
+        y: 0
+        width: 51
+        height: 29
+      spriteId: 274efb9ccd48c9148af9a3a4b5422d58
+    - name: LungingStab_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 23
+        y: 0
+        width: 51
+        height: 29
+      spriteId: 40dd1b05b91394643b78a6129d03b203
+    - name: LungingStab_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 23
+        y: 0
+        width: 51
+        height: 29
+      spriteId: 4fd63ed2c0e1dc446980e083f5c15300
+    - name: LungingStab_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 23
+        y: 0
+        width: 51
+        height: 29
+      spriteId: 981e547b8c96a8a4e80ac36c9fbf79ee
+    - name: LungingStab_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 23
+        y: 0
+        width: 51
+        height: 29
+      spriteId: ff4aa413d7feb1045a7c3fe3620bd063
+    - name: LungingStab_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 31
+        y: 0
+        width: 22
+        height: 38
+      spriteId: da3b6c335e695c949810a6fecf8bbc23
+    - name: LungingStab_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 26
+        y: 0
+        width: 26
+        height: 32
+      spriteId: 1ec715aefca9a2b4eab1dd74a1697f28
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 80, y: 48}

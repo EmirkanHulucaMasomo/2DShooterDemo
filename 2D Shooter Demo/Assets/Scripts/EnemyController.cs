@@ -14,6 +14,7 @@ public class EnemyController : MonoBehaviour
     Vector2 MoveDir;
     float MoveSpeed = 5f;
     public bool isAlive;
+    private Transform canvaPar;
 
     private void OnEnable()
     {
@@ -25,7 +26,8 @@ public class EnemyController : MonoBehaviour
     }
     void Start()
     {
-        stats= GetComponent<StatController>();
+        canvaPar = transform.GetChild(0);
+        stats = GetComponent<StatController>();
         rigBody= GetComponent<Rigidbody2D>();
         animator= GetComponent<Animator>();
         boxCollider= GetComponent<BoxCollider2D>();
@@ -39,16 +41,29 @@ public class EnemyController : MonoBehaviour
         if (stats.Hp <= 0)
         {
             isAlive= false;
+            if (canvaPar.gameObject.activeSelf)
+            {
+                GameManager.EnemyCounter--;
+                GameManager.spawnedCounter--;
+                canvaPar.gameObject.SetActive(false);
+            }
+            
+            
         }
         if (isAlive)
         {
             if (moveX == +1f)
             {
                 transform.eulerAngles = new Vector3(0f,0f, 0f);
+                canvaPar.localRotation = Quaternion.Euler(0f, 0, 0f);
+                canvaPar.localPosition = new Vector3(0f, 0f, 60f);
+
             }
             else
             {
                 transform.eulerAngles = new Vector3(0f, 180f, 0f);
+                canvaPar.localRotation = Quaternion.Euler(0f, 180f, 0f);
+                canvaPar.localPosition = new Vector3(0f, 0f, -60f);
             }
             
         }

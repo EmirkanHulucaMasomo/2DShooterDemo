@@ -1,7 +1,528 @@
 fileFormatVersion: 2
 guid: 664698a48ddca0b4a9f3a17f18f360b7
-DefaultImporter:
+ScriptedImporter:
+  internalIDToNameTable: []
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: GoundCombo3_Frame_0
+    originalName: 
+    pivot: {x: 0.43636367, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 190
+      width: 55
+      height: 34
+    spriteID: 988bb869e2e7a7e46b8254fd8276bc98
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 190}
+  - name: GoundCombo3_Frame_1
+    originalName: 
+    pivot: {x: 0.43636367, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 190
+      width: 55
+      height: 34
+    spriteID: 003a0fac28856154ba315b637040f9a7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 190}
+  - name: GoundCombo3_Frame_2
+    originalName: 
+    pivot: {x: 0.47826084, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 69
+      height: 43
+    spriteID: ff9e9fc1c3e8f344ca3a869b25142f82
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: GoundCombo3_Frame_3
+    originalName: 
+    pivot: {x: 0.47826084, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 81
+      y: 4
+      width: 69
+      height: 43
+    spriteID: d951f1b18eaa17a48a3982c0ea4e39b5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 81, y: 4}
+  - name: GoundCombo3_Frame_4
+    originalName: 
+    pivot: {x: 0.40677968, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 158
+      y: 4
+      width: 59
+      height: 37
+    spriteID: 25e75a832c90aec45b41e0870dc11765
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 158, y: 4}
+  - name: GoundCombo3_Frame_5
+    originalName: 
+    pivot: {x: 0.40677968, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 55
+      width: 59
+      height: 37
+    spriteID: 28e5938aa4c154543a64e7512142ec54
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 55}
+  - name: GoundCombo3_Frame_6
+    originalName: 
+    pivot: {x: 0.40677968, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 71
+      y: 55
+      width: 59
+      height: 37
+    spriteID: 2b97a2acbf1d82441a688d836d0efc34
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 71, y: 55}
+  - name: GoundCombo3_Frame_7
+    originalName: 
+    pivot: {x: 0.40677968, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 138
+      y: 55
+      width: 59
+      height: 37
+    spriteID: dbe132d1d57a9424aa715ed16143b9e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 138, y: 55}
+  - name: GoundCombo3_Frame_8
+    originalName: 
+    pivot: {x: 0.40677968, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 100
+      width: 59
+      height: 37
+    spriteID: 6b770c39035620f45bdf6e17d0258384
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 100}
+  - name: GoundCombo3_Frame_9
+    originalName: 
+    pivot: {x: 0.40677968, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 71
+      y: 100
+      width: 59
+      height: 37
+    spriteID: 14fc644b592e8394a99d280704e556ae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 71, y: 100}
+  - name: GoundCombo3_Frame_10
+    originalName: 
+    pivot: {x: 0.40677968, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 138
+      y: 100
+      width: 59
+      height: 37
+    spriteID: b0b776b7d6cfec24db6b8954763690c9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 138, y: 100}
+  - name: GoundCombo3_Frame_11
+    originalName: 
+    pivot: {x: 0.40677968, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 145
+      width: 59
+      height: 37
+    spriteID: 05d1c812ecd5c684fb98602357c576aa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 145}
+  - name: GoundCombo3_Frame_12
+    originalName: 
+    pivot: {x: 0.40677968, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 71
+      y: 145
+      width: 59
+      height: 37
+    spriteID: a62fab29bfe60d444a7e9c8536812ca2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 71, y: 145}
+  - name: GoundCombo3_Frame_13
+    originalName: 
+    pivot: {x: 0.40677968, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 138
+      y: 145
+      width: 59
+      height: 37
+    spriteID: 56a159cbdde48a94b945caef249e4b3b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 138, y: 145}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1119227826
+    name: GoundCombo3
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: GoundCombo3_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 16
+        y: 0
+        width: 55
+        height: 34
+      spriteId: 988bb869e2e7a7e46b8254fd8276bc98
+    - name: GoundCombo3_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 16
+        y: 0
+        width: 55
+        height: 34
+      spriteId: 003a0fac28856154ba315b637040f9a7
+    - name: GoundCombo3_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 7
+        y: 0
+        width: 69
+        height: 43
+      spriteId: ff9e9fc1c3e8f344ca3a869b25142f82
+    - name: GoundCombo3_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 7
+        y: 0
+        width: 69
+        height: 43
+      spriteId: d951f1b18eaa17a48a3982c0ea4e39b5
+    - name: GoundCombo3_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 16
+        y: 0
+        width: 59
+        height: 37
+      spriteId: 25e75a832c90aec45b41e0870dc11765
+    - name: GoundCombo3_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 16
+        y: 0
+        width: 59
+        height: 37
+      spriteId: 28e5938aa4c154543a64e7512142ec54
+    - name: GoundCombo3_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 16
+        y: 0
+        width: 59
+        height: 37
+      spriteId: 2b97a2acbf1d82441a688d836d0efc34
+    - name: GoundCombo3_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 16
+        y: 0
+        width: 59
+        height: 37
+      spriteId: dbe132d1d57a9424aa715ed16143b9e9
+    - name: GoundCombo3_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 16
+        y: 0
+        width: 59
+        height: 37
+      spriteId: 6b770c39035620f45bdf6e17d0258384
+    - name: GoundCombo3_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 16
+        y: 0
+        width: 59
+        height: 37
+      spriteId: 14fc644b592e8394a99d280704e556ae
+    - name: GoundCombo3_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 16
+        y: 0
+        width: 59
+        height: 37
+      spriteId: b0b776b7d6cfec24db6b8954763690c9
+    - name: GoundCombo3_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 16
+        y: 0
+        width: 59
+        height: 37
+      spriteId: 05d1c812ecd5c684fb98602357c576aa
+    - name: GoundCombo3_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 16
+        y: 0
+        width: 59
+        height: 37
+      spriteId: a62fab29bfe60d444a7e9c8536812ca2
+    - name: GoundCombo3_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 16
+        y: 0
+        width: 59
+        height: 37
+      spriteId: 56a159cbdde48a94b945caef249e4b3b
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 80, y: 48}

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GunController : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class GunController : MonoBehaviour
     private float nextShootTime;
     public float fireRateCdr;
     private bool bursting;
+    public int gunChoser;
+    
     public enum GunType {Rifle,auto,burst }
 
     public GunType gunType;
@@ -26,11 +29,13 @@ public class GunController : MonoBehaviour
         playerAnimator= GetComponent<Animator>();
         eventManager = GameObject.Find("GameManager").GetComponent<EventManager>();
         gunRenderer = Gun.GetComponent<SpriteRenderer>();
+        gunChoser = 1;
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         if(Input.GetKeyDown(KeyCode.L))
         {
             Sword.SetActive(true);
@@ -46,15 +51,47 @@ public class GunController : MonoBehaviour
                 Sword.transform.localPosition = new Vector3(1.8f, 0.18f, 0);
             }
         }
-        /*if (Input.GetKeyUp(KeyCode.L))
+        if (shooting == true)
         {
-            Sword.SetActive(false);
-            playerAnimator.SetBool("MeleeAttack", false);
-        }*/
+            switch (gunType)
+            {
+                case GunType.Rifle:
+                    shooting = true;
+                    if (Time.time > nextShootTime)
+                    {
+                        Shoot();
+                        float fireRate = 0.3f - fireRateCdr;
+                        nextShootTime = Time.time + fireRate;
+                    }
+                    break;
+
+                case GunType.auto:
+                    shooting = true;
+                    if (Time.time > nextShootTime)
+                    {
+                        Shoot();
+                        float fireRate = 0.1F;
+                        nextShootTime = Time.time + fireRate;
+                    }
+                    break;
+
+                case GunType.burst:
+                    shooting = true;
+                    if (Time.time > nextShootTime && !bursting)
+                    {
+                        bursting = true;
+                        StartCoroutine(BurstFire());
+                        float fireRate = 0.5f - fireRateCdr;
+                        nextShootTime = Time.time + fireRate;
+                    }
+                    break;
+
+            }
+        }
         switch (gunType)
         {
             case GunType.Rifle:
-                if (Input.GetKey(KeyCode.Mouse0))
+                if (Input.GetKey(KeyCode.P))
                 {
                     
                     shooting= true;
@@ -68,7 +105,7 @@ public class GunController : MonoBehaviour
                 break;
 
             case GunType.auto:
-                if (Input.GetKey(KeyCode.Mouse0))
+                if (Input.GetKey(KeyCode.P))
                 {
 
                     shooting= true;
@@ -83,7 +120,7 @@ public class GunController : MonoBehaviour
                 break;
 
             case GunType.burst:
-                if (Input.GetKeyDown(KeyCode.Mouse0))
+                if (Input.GetKey(KeyCode.P))
                 {
                     shooting= true;
                     if (Time.time > nextShootTime && !bursting)
@@ -99,7 +136,7 @@ public class GunController : MonoBehaviour
 
         }
                     
-        if (Input.GetKeyUp(KeyCode.Mouse0))
+        if (Input.GetKey(KeyCode.P))
         {
             shooting= false;
             playerAnimator.SetBool("Shooting", false);
@@ -140,7 +177,32 @@ public class GunController : MonoBehaviour
             }
         }
     }
-
+    public void ShootButtonDonw()
+    {
+        Debug.Log("pressing");
+        shooting = true;
+        
+    }
+    public void ShootButtonUp()
+    {
+        shooting = false;
+        playerAnimator.SetBool("Shooting", false);
+    }
+    public void Melee()
+    {
+        Sword.SetActive(true);
+        playerAnimator.SetBool("MeleeAttack", true);
+        if (EventManager.lookDirr != "Right")
+        {
+            Sword.transform.eulerAngles = new Vector3(0, 180, 0);
+            Sword.transform.localPosition = new Vector3(-1.8f, 0.18f, 0);
+        }
+        else
+        {
+            Sword.transform.eulerAngles = new Vector3(0, 0, 0);
+            Sword.transform.localPosition = new Vector3(1.8f, 0.18f, 0);
+        }
+    }
     private List<GameObject> SetObjects()
     {
         List<GameObject> list = new List<GameObject>();
@@ -193,7 +255,29 @@ public class GunController : MonoBehaviour
         bursting = false;
 
     }
+    public void ChangeGunType()
+    {
+        gunChoser++;
+        if (gunChoser > 3)
+        {
+            gunChoser = 1;
+        }
+        switch (gunChoser)
+        {
+            case 1:
+                gunType = GunType.Rifle;
+                break;
 
+            case 2:
+                gunType = GunType.auto;
+                break;
+
+            case 3:
+                gunType = GunType.burst;
+                break;
+        }
+
+    }
     public void EndCombo()
     {
         Sword.SetActive(false);

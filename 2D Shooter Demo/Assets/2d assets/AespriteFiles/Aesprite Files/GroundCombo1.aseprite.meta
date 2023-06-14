@@ -1,7 +1,360 @@
 fileFormatVersion: 2
 guid: c91603b96f72b39489da35c1bc99151c
-DefaultImporter:
+ScriptedImporter:
+  internalIDToNameTable: []
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: GroundCombo1_Frame_0
+    originalName: 
+    pivot: {x: 0.8333333, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 83
+      y: 90
+      width: 54
+      height: 32
+    spriteID: 551a117d7146fc64c88b0fa58aa1b30d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 83, y: 90}
+  - name: GroundCombo1_Frame_1
+    originalName: 
+    pivot: {x: 0.6, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 75
+      height: 36
+    spriteID: 69e67bb14fa8c414480274a339c5b244
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: GroundCombo1_Frame_2
+    originalName: 
+    pivot: {x: 0.63380283, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 4
+      width: 71
+      height: 34
+    spriteID: bc24f4a635804e140b6ef611c4ad8ced
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 4}
+  - name: GroundCombo1_Frame_3
+    originalName: 
+    pivot: {x: 0.63380283, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 166
+      y: 4
+      width: 71
+      height: 34
+    spriteID: 9d6550eeb19935545a23425c86d70463
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 166, y: 4}
+  - name: GroundCombo1_Frame_4
+    originalName: 
+    pivot: {x: 0.63380283, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 48
+      width: 71
+      height: 34
+    spriteID: 237335376e286ca48a209819839d91f3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 48}
+  - name: GroundCombo1_Frame_5
+    originalName: 
+    pivot: {x: 0.63380283, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 83
+      y: 48
+      width: 71
+      height: 34
+    spriteID: 6014f06c47097e843aa63040073c1454
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 83, y: 48}
+  - name: GroundCombo1_Frame_6
+    originalName: 
+    pivot: {x: 0.63380283, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 162
+      y: 48
+      width: 71
+      height: 34
+    spriteID: df2c4ec1c46af05459f33c60c694091c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 162, y: 48}
+  - name: GroundCombo1_Frame_7
+    originalName: 
+    pivot: {x: 0.63380283, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 90
+      width: 71
+      height: 34
+    spriteID: f8a46d0e56bce4241a271fe3ddc3b4e8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 90}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -605028684
+    name: GroundCombo1
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: GroundCombo1_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: -5
+        y: 0
+        width: 54
+        height: 32
+      spriteId: 551a117d7146fc64c88b0fa58aa1b30d
+    - name: GroundCombo1_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: -5
+        y: 0
+        width: 75
+        height: 36
+      spriteId: 69e67bb14fa8c414480274a339c5b244
+    - name: GroundCombo1_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: -5
+        y: 0
+        width: 71
+        height: 34
+      spriteId: bc24f4a635804e140b6ef611c4ad8ced
+    - name: GroundCombo1_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: -5
+        y: 0
+        width: 71
+        height: 34
+      spriteId: 9d6550eeb19935545a23425c86d70463
+    - name: GroundCombo1_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: -5
+        y: 0
+        width: 71
+        height: 34
+      spriteId: 237335376e286ca48a209819839d91f3
+    - name: GroundCombo1_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: -5
+        y: 0
+        width: 71
+        height: 34
+      spriteId: 6014f06c47097e843aa63040073c1454
+    - name: GroundCombo1_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: -5
+        y: 0
+        width: 71
+        height: 34
+      spriteId: df2c4ec1c46af05459f33c60c694091c
+    - name: GroundCombo1_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: -5
+        y: 0
+        width: 71
+        height: 34
+      spriteId: f8a46d0e56bce4241a271fe3ddc3b4e8
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 80, y: 48}

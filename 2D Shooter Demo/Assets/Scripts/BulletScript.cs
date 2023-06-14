@@ -15,18 +15,26 @@ public class BulletScript : MonoBehaviour
     int damage;
     private readonly string enemytag = "Enemy";
     private EventManager eventManager;
+    private bool explosive;
 
     public delegate void OnHitAction(int dmg);
     public static event OnHitAction OnHit;
     private void OnEnable()
     {
-        
+        explosive = false;
+
+        int rand = UnityEngine.Random.Range(0, 11);
+        if (rand == 1 || rand == 3 || rand == 5)
+        {
+            explosive = true;
+        }
     }
     void Start()
     {
         eventManager=GameObject.Find("GameManager").GetComponent<EventManager>();
         
         rigBody= GetComponent<Rigidbody2D>();
+        
         //InvokeRepeating("DestroySelf", 3f,2.5f);
         
     }
@@ -70,7 +78,7 @@ public class BulletScript : MonoBehaviour
                 ImpactE.transform.eulerAngles = new Vector3(0, 0, 0);
             }
             ImpactE.SetActive(true);
-            if(Input.GetKey(KeyCode.E))
+            if(explosive)
             {
                 ExpoE.transform.position =transform.position;
                 ExpoE.SetActive(true);

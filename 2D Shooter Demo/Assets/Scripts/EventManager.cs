@@ -24,11 +24,20 @@ public class EventManager : MonoBehaviour
 
     public delegate void OnDashEnd(BoxCollider2D pCollid);
     public static event OnDashEnd onDashEnd;
+
+    public delegate void OnPlayerDeath();
+    public static event OnPlayerDeath onPlayerDeath;
     private void Update()
     {
         
         
     }
+
+    public void PlayerDied()
+    {
+        onPlayerDeath();
+    }
+
     public void SetDir(string dir)
     {
         this.lookDir = dir;
